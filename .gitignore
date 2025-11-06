@@ -1,0 +1,3 @@
+*.csv
+*.srt
+src/__pycache__/srt.cpython-312.pyc
