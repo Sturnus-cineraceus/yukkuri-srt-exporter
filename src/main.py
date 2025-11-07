@@ -18,7 +18,7 @@ def process_csv(input_path, total_time_str, output_path):
         for row in reader:
             rows.append(row)
 
-
+    rows.sort(key=lambda x: int(x[0]))
     for i in range(len(rows)):
         text = rows[i][4]
         start_time = time_to_seconds(rows[i][1])
